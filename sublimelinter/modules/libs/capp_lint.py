@@ -158,12 +158,12 @@ class LintChecker(object):
             'showPositionForGroup': 1,
             'type': ERROR_TYPE_WARNING
         },
-        {
-            'regex': re.compile(ur'^\s*(?:(?:else )?if|for|switch|while|with)\s*\(.+\)\s*(\{)\s*(?://.*|/\*.*\*/\s*)?$'),
-            'error': 'braces should be on their own line',
-            'showPositionForGroup': 1,
-            'type': ERROR_TYPE_ILLEGAL
-        },
+        #{
+        #    'regex': re.compile(ur'^\s*(?:(?:else )?if|for|switch|while|with)\s*\(.+\)\s*(\{)\s*(?://.*|/\*.*\*/\s*)?$'),
+        #    'error': 'braces should be on their own line',
+        #    'showPositionForGroup': 1,
+        #    'type': ERROR_TYPE_ILLEGAL
+        #},
         {
             'regex': TRAILING_WHITESPACE_RE,
             'error': 'trailing whitespace',
